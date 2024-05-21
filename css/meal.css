@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Roboto-static", sans-serif;
+}
+
+/**NAVBAR*/
+
+header {
+  width: 100%;
+  background-color: #888;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header #navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+header #navbar a:hover {
+  background-color: #777;
+  transition: 0.3;
+}
+
+header #navbar input[type="search"] {
+  padding: 0.5rem;
+  font-size: 17px;
+  border: none;
+}
+
+header #navbar .container button {
+  padding: 6px 10px;
+  font-size: 1rem;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/**INGREDIENTS AND MEASURES*/
+#section {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  grid-gap: 3px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#section #name-img h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+#section #name-img h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#section #name-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 70px;
+  max-width: 500px;
+}
+
+#section #details {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: 2rem;
+  margin-top: 20px;
+}
+
+#section #details h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/**Instruction*/
+
+#instructions-section {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  grid-gap: 3px;
+  margin: 0px auto 70px auto;
+  justify-content: center;
+  background-color: #eff3f5e5;
+}
+
+section #instructions {
+  margin: 70px;
+  max-width: 1200px;
+}
+
+footer {
+  text-align: center;
+  margin: 50px;
+}
+
+footer h3 {
+  font-weight: 500;
+  font-size: medium;
+}
